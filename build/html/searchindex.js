@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:50,filenames:["index.md"],objects:{},objnames:{},objtypes:{},terms:{index:0,modul:0,page:0,search:0},titles:["Welcome to ipa&#8217;s documentation!"],titleterms:{document:0,indice:0,ipa:0,tabl:0,welcom:0}})
