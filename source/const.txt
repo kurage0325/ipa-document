@@ -1,0 +1,2 @@
+.. |test| replace:: replaceString
+.. |test2| replace:: replaceTest2String
