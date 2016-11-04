@@ -1,20 +1,9 @@
-.. ipa documentation master file, created by
-   sphinx-quickstart on Sun Oct 16 22:20:00 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+# 応用情報処理試験対策用 Wiki
 
-Welcome to ipa's documentation!
-===============================
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+## はじめに
+test
 
 
+## 記載内容
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+## test
