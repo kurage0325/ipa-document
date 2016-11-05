@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     
-    <title>TCP/IP &mdash; ipa  documentation</title>
+    <title>ネットワーク基礎知識 &mdash; ipa  documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -68,10 +68,22 @@
                 <a role="button" id="localToc" data-toggle="dropdown" data-target="#" href="#">Table Of Contents <b class="caret"></b></a>
                 <ul class="dropdown-menu localtoc sp-localtoc" role="menu" aria-labelledby="localToc">
                 <ul>
-<li><a class="reference internal" href="#">TCP/IP</a><ul>
-<li><a class="reference internal" href="#id1">1.1 コンピュータとネットワーク発展の７つの段階</a><ul>
-<li><a class="reference internal" href="#batch-processing">1.1.2 バッチ処理（Batch Processing）</a></li>
-<li><a class="reference internal" href="#tss">1.1.3 タイムシェアリングシステム（TSS）</a></li>
+<li><a class="reference internal" href="#">ネットワーク基礎知識</a><ul>
+<li><a class="reference internal" href="#id2">1.1 コンピュータとネットワーク発展の７つの段階</a><ul>
+<li><a class="reference internal" href="#batch-processing">1.1.1 バッチ処理（Batch Processing）</a></li>
+<li><a class="reference internal" href="#tss">1.1.2 タイムシェアリングシステム（TSS）</a></li>
+<li><a class="reference internal" href="#id3">1.1.3 コンピュータ間通信</a></li>
+<li><a class="reference internal" href="#id4">1.1.4 コンピュータネットワークの登場</a></li>
+<li><a class="reference internal" href="#id5">1.1.5 インターネットの普及</a></li>
+<li><a class="reference internal" href="#id6">1.1.6 インターネット技術中心の時代へ</a></li>
+<li><a class="reference internal" href="#id7">1.1.7 安全につなぐ時代へ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">1.2 プロトコルとは</a><ul>
+<li><a class="reference internal" href="#id9">1.2.1 プロトコルの種類</a></li>
+<li><a class="reference internal" href="#id10">1.2.2 パケット交換でのプロトコル</a></li>
+<li><a class="reference internal" href="#id11">1.2.3 プロトコルの標準化</a></li>
+<li><a class="reference internal" href="#osi">1.3.1 プロトコルの階層化とOSI参照モデル</a></li>
 </ul>
 </li>
 </ul>
@@ -118,10 +130,22 @@
   <div class="sidebar hidden-xs" role="navigation" aria-label="main navigation">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">TCP/IP</a><ul>
-<li><a class="reference internal" href="#id1">1.1 コンピュータとネットワーク発展の７つの段階</a><ul>
-<li><a class="reference internal" href="#batch-processing">1.1.2 バッチ処理（Batch Processing）</a></li>
-<li><a class="reference internal" href="#tss">1.1.3 タイムシェアリングシステム（TSS）</a></li>
+<li><a class="reference internal" href="#">ネットワーク基礎知識</a><ul>
+<li><a class="reference internal" href="#id2">1.1 コンピュータとネットワーク発展の７つの段階</a><ul>
+<li><a class="reference internal" href="#batch-processing">1.1.1 バッチ処理（Batch Processing）</a></li>
+<li><a class="reference internal" href="#tss">1.1.2 タイムシェアリングシステム（TSS）</a></li>
+<li><a class="reference internal" href="#id3">1.1.3 コンピュータ間通信</a></li>
+<li><a class="reference internal" href="#id4">1.1.4 コンピュータネットワークの登場</a></li>
+<li><a class="reference internal" href="#id5">1.1.5 インターネットの普及</a></li>
+<li><a class="reference internal" href="#id6">1.1.6 インターネット技術中心の時代へ</a></li>
+<li><a class="reference internal" href="#id7">1.1.7 安全につなぐ時代へ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">1.2 プロトコルとは</a><ul>
+<li><a class="reference internal" href="#id9">1.2.1 プロトコルの種類</a></li>
+<li><a class="reference internal" href="#id10">1.2.2 パケット交換でのプロトコル</a></li>
+<li><a class="reference internal" href="#id11">1.2.3 プロトコルの標準化</a></li>
+<li><a class="reference internal" href="#osi">1.3.1 プロトコルの階層化とOSI参照モデル</a></li>
 </ul>
 </li>
 </ul>
@@ -161,12 +185,12 @@
               <div class="bodywrapper">
                 <div class="body">
                   
-  <div class="section" id="tcp-ip">
-<h1>TCP/IP<a class="headerlink" href="#tcp-ip" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2>1.1 コンピュータとネットワーク発展の７つの段階<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="id1">
+<h1>ネットワーク基礎知識<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>1.1 コンピュータとネットワーク発展の７つの段階<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="batch-processing">
-<h3>1.1.2 バッチ処理（Batch Processing）<a class="headerlink" href="#batch-processing" title="Permalink to this headline">¶</a></h3>
+<h3>1.1.1 バッチ処理（Batch Processing）<a class="headerlink" href="#batch-processing" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">バッチ処理とは、処理するプログラムやデータなどをまとめて一括で処理する方式をいう。</div>
 </div>
@@ -174,18 +198,202 @@
 <div class="line"><em>使用言語</em></div>
 <div class="line">COBOL、FORTRAN</div>
 </div>
-<div><img height="120" src="../_images/blockdiag-224d24eb1ad00423fc63f7bdf5b1d7968139466f.png" width="1024" /></div></div>
+<div><svg height="120" viewBox="0 0 832 120" width="832" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="46" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="46" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="451" y="46" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="643" y="46" />
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="110" x="128" y="66">プログラム（カード）</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="66" x="320" y="65">カードリーダ</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="448" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="66" x="512" y="65">コンピュータ</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="640" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="44" x="704" y="65">プリンタ</text>
+  <path d="M 192 60 L 248 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,60 248,56 248,64 255,60" stroke="rgb(0,0,0)" />
+  <path d="M 384 60 L 440 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="447,60 440,56 440,64 447,60" stroke="rgb(0,0,0)" />
+  <path d="M 576 60 L 632 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="639,60 632,56 632,64 639,60" stroke="rgb(0,0,0)" />
+</svg>
+</div>
+</div>
 <div class="section" id="tss">
-<h3>1.1.3 タイムシェアリングシステム（TSS）<a class="headerlink" href="#tss" title="Permalink to this headline">¶</a></h3>
-<span class="target" id="index-1"></span><div class="line-block">
+<h3>1.1.2 タイムシェアリングシステム（TSS）<a class="headerlink" href="#tss" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
 <div class="line">TSSとは、１台のコンピュータに複数の端末を接続し、複数のユーザが同時にコンピュータを利用できるようにしたシステムです。</div>
 </div>
 <div class="line-block">
 <div class="line"><em>使用言語</em></div>
 <div class="line">BASIC</div>
 </div>
+<ul class="simple">
+<li>BASICにより、対話的にプログラミングできるようになった。</li>
+<li>コンピュータと端末の間は、通信回線で <strong>スター型</strong> に接続された。</li>
+</ul>
+<div><svg height="280" viewBox="0 0 448 280" width="448" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="46" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="126" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="206" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="46" />
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="28" x="128" y="66">端末A</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="120" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="28" x="128" y="146">端末B</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="200" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="28" x="128" y="226">端末C</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="99" x="320" y="65">ホストコンピュータ</text>
+  <path d="M 192 60 L 248 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,60 248,56 248,64 255,60" stroke="rgb(0,0,0)" />
+  <path d="M 192 140 L 240 140" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 240 140 L 240 60" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 240 60 L 248 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,60 248,56 248,64 255,60" stroke="rgb(0,0,0)" />
+  <path d="M 192 220 L 240 220" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 240 220 L 240 60" fill="none" stroke="rgb(0,0,0)" />
+  <path d="M 240 60 L 248 60" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,60 248,56 248,64 255,60" stroke="rgb(0,0,0)" />
+</svg>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>1.1.3 コンピュータ間通信<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>1970年代、コンピュータの性能が飛躍的に向上し、安価になると、研究機関だけでなく
+一般の企業にもコンピュータが導入されるようになった。
+このような、背景もありコンピュータ間を通信回線で接続するだけでデータを瞬時にやり取りでできるようにする必要があった。</p>
+</div>
+<div class="section" id="id4">
+<h3>1.1.4 コンピュータネットワークの登場<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
-<div class="line">BASICにより、対話的にプログラミングできるようになった。</div>
+<div class="line">1970年代にコンピュータネットワークの実験が開始され、1980年代になると、</div>
+<div class="line">いろいろな種類のコンピュータを相互に接続できるコンピュータネットワークが登場した。</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>1.1.5 インターネットの普及<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>1990年代初めに、インターネットが普及し始め、ダウンサイジング、マルチベンダ接続という言葉が流行した。</p>
+<div class="admonition note" id="index-2">
+<p class="first admonition-title">Note</p>
+<p class="last">大型のメインフレームで行われていた企業の基幹業務をパーソナルコンピュータやUNIXワークステーションで構築したシステムへ置き換える動きが活発化した。
+このような動きをダウンサイジングと呼ぶ。</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h3>1.1.6 インターネット技術中心の時代へ<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>汎用の通信基盤として電話網の代わりに、インターネットの技術であるIP網が構築されるようになってきている。
+コンピュータだけではなく、携帯電話や家電製品、ゲーム機などに広がっている。</p>
+</div>
+<div class="section" id="id7">
+<h3>1.1.7 安全につなぐ時代へ<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>利便性が増す、インターネットだが、その一方でコンピュータウイルスによる被害、企業情報や個人情報の漏洩、ネットワークを介した詐欺事件などインターネットを利用することによる被害が増えている。
+そこで、単につなぐだけでなく、安全につなぐ時代へと変わってきている。</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>1.2 プロトコルとは<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3>1.2.1 プロトコルの種類<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>プロトコルとは、コンピュータとコンピュータがネットワークを利用して通信するために決められた「約束ごと」をいう。</p>
+<div class="line-block">
+<div class="line">代表的なプロトコルは、インターネットで利用される <strong>IP</strong>  <strong>TCP</strong>  <strong>HTTP</strong> または、LANで使われる <strong>IPX</strong>  <strong>SPX</strong> がある。</div>
+<div class="line">TCP/IPのように体系的にまとめたものを「ネットワークアーキテクチャ」とよぶ。</div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>1.2.2 パケット交換でのプロトコル<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p id="index-4">パケット交換とは、大きなデータをパケット（Packet）と呼ばれる単位に分割して送信する方法をいう。</p>
+<div><svg height="360" viewBox="0 0 640 360" width="640" xmlns="http://www.w3.org/2000/svg" xmlns:inkspace="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs id="defs_block">
+    <filter height="1.504" id="filter_blur" inkspace:collect="always" width="1.1575" x="-0.07875" y="-0.252">
+      <feGaussianBlur id="feGaussianBlur3780" inkspace:collect="always" stdDeviation="4.2" />
+    </filter>
+  </defs>
+  <title>blockdiag</title>
+  <desc />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="46" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="126" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="126" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="451" y="126" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="206" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="67" y="286" />
+  <rect fill="rgb(0,0,0)" height="40" stroke="rgb(0,0,0)" style="filter:url(#filter_blur);opacity:0.7;fill-opacity:1" width="128" x="259" y="286" />
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="40" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="66" x="128" y="66">送信元ホスト</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="120" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="39" x="128" y="145">データA</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="120" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="66" x="320" y="146">細切れに分割</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="448" y="120" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="121" x="512" y="139">荷札（ヘッダ）を付与す</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="69" x="512" y="153">る（Packet）</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="200" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="55" x="128" y="226">宛先ホスト</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="64" y="280" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="124" x="128" y="299">Packetから荷札（ヘッダ</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="44" x="128" y="313">）を除く</text>
+  <rect fill="rgb(255,255,255)" height="40" stroke="rgb(0,0,0)" width="128" x="256" y="280" />
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" textLength="77" x="320" y="306">データを再構築</text>
+  <path d="M 192 140 L 248 140" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,140 248,136 248,144 255,140" stroke="rgb(0,0,0)" />
+  <path d="M 384 140 L 440 140" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="447,140 440,136 440,144 447,140" stroke="rgb(0,0,0)" />
+  <path d="M 192 300 L 248 300" fill="none" stroke="rgb(0,0,0)" />
+  <polygon fill="rgb(0,0,0)" points="255,300 248,296 248,304 255,300" stroke="rgb(0,0,0)" />
+</svg>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">ヘッダ部分には、送信元コンピュータと宛先コンピュータのアドレスとデータの番号が書き込まれる。</p>
+</div>
+</div>
+<div class="section" id="id11">
+<h3>1.2.3 プロトコルの標準化<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">コンピュータ通信が始まった当初は、体系化や標準化を意識せずに、各メーカごとに異なるネットワークアーキテクチャを発表していた。</div>
+<div class="line">これでは異なるメーカのコンピュータでの通信ができず標準化が望まれた。</div>
+</div>
+<div class="line-block">
+<div class="line">例）IBM -&gt; SNA</div>
+</div>
+<span class="target" id="index-5"></span><div class="line-block" id="index-6">
+<div class="line">このような問題を解決するため、ISO（国際標準化機構）は、国際標準としてOSIと呼ばれる通信体系を標準化した。</div>
+</div>
+<ul class="simple">
+<li>ISOとは、「International Organization for Standardization」を言う。</li>
+<li>OSIとは、「Open Systems Interconnection」開放型システム間相互接続を言う。</li>
+<li>OSI参照モデルとは、通信に必要な機能を7つの階層に分け、機能を分割することでネットワークプロトコルを単純化するためのモデルです。</li>
+</ul>
+<div class="line-block" id="index-7">
+<div class="line">TCP/IPはインターネット上の標準であり、世界中で最も使われている通信プロトコルです。</div>
+<div class="line">インターネットで利用されている機器やソフトウェアはIETFによって標準化されたTCP/IPに準拠している。</div>
+</div>
+<ul class="simple">
+<li>IETFとは「Internet Engineering Task Force」を言う。</li>
+</ul>
+</div>
+<div class="section" id="osi">
+<h3>1.3.1 プロトコルの階層化とOSI参照モデル<a class="headerlink" href="#osi" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">各階層は、下位階層から特定のサービスを受け、上位層に特定のサービスを提供する。</div>
+<div class="line">上位層と階層の間でサービスのやり取りをする時の約束ごとを「<strong>インターフェース</strong>」と呼び、</div>
+<div class="line">通信相手の同じ層とやり取りする時の約束ごとを「<strong>プロトコル</strong>」と呼ぶ。</div>
 </div>
 </div>
 </div>

@@ -353,6 +353,7 @@ extensions = ['sphinxcontrib.blockdiag']
 
 # Fontpath for blockdiag (truetype font)
 blockdiag_fontpath = './font/migu-1m-regular.ttf'
+blockdiag_html_image_format = 'SVG'
 
 
 
