@@ -66,9 +66,9 @@ div.attention {
 /* -- note, important -- */
 div.note,
 div.important {
-  color: #ffffff;
-  background-color: #18B81D;
-  border-color: #18B81D;
+  color: #111111;
+  background-color: #EFEFEF;
+  border-color: #DDDDDD;
 }
 
 /* -- hint, tip -- */
